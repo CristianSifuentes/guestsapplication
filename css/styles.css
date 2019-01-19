@@ -41,6 +41,7 @@ h3{
     grid-template-rows: 1fr 2fr;
 }
 
+
 .header {
     display: flex;
     justify-content: space-between;
