@@ -3,6 +3,11 @@
     --primario: #da595e;
     --obscuro: #484848;
     --claro: #ffffff;
+
+    --hospedaje: #274154;
+    --concierto: #da595e;
+    --clase: #598dda;
+    --paseo: #940ad4;
 }
 html{
     box-sizing: border-box;
@@ -25,6 +30,25 @@ h2{
 h3{
     font-size: 1.8rem;
 }
+
+/** Colores **/
+.hospedaje {
+    color: #274154;
+}
+
+.concierto {
+    color: #da595e;
+}
+.clase {
+    color: #598dda;
+}
+.paseo {
+    color: #940ad4;
+}
+
+
+
+
 img {
     max-width: 100%;
 }
@@ -36,7 +60,7 @@ img {
 
 .hero{
     height: 100vh; /*Todo el espacio disponible*/
-    background-image: url(../img/arriba.jpg);
+    background-image: url(../img/travel2.jpg);
     display: grid;
 
     background-size: cover; /*Crece la imagen y ya no se repite*/
@@ -114,4 +138,34 @@ form input[type="submit"] {
 
 form input[type="submit"]:hover { 
     cursor: pointer;
+}
+
+
+/*Contenido pricipal*/
+/*Importante pripiedades que hacen responsiv sin media querys*/
+.contenedor-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+}
+
+.card img {
+  width: 100%;
+}
+
+.info .categoria {
+  text-transform: uppercase;
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+.info .titulo {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin: 0;
+  
+}
+
+.info .precio {
+  color: var(--)
 }
