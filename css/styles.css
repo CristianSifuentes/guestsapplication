@@ -166,6 +166,7 @@ form input[type="submit"]:hover {
 
 /*Contenido pricipal*/
 /*Importante pripiedades que hacen responsiv sin media querys*/
+/*Esta clase hace que se acomode automaticamente cuando es 3 columnas - analizar*/
 .contenedor-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -238,3 +239,24 @@ form input[type="submit"]:hover {
 /*
 Sticky Element: Scroll Down to See the Effect
 */
+
+
+/*Destinos populares*/
+.destinos  .contenedor-cards {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/*Se mueve el estilo solo en destinos*/
+.destinos .card{
+  position: relative;
+}
+/*Coloca el texto dentro del card*/
+.destinos .info{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: var(--claro);
+}
+.destinos .info .titulo{
+   font-size: 1.8rem;
+}
