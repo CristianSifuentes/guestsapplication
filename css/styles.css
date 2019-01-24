@@ -286,10 +286,23 @@ Sticky Element: Scroll Down to See the Effect
    font-size: 1.8rem;
 }
 
-.footer{
-    
+.footer {
+    background-color: var(--claro);
+    border-top: 1px solid var(--obscuro);
+    padding-top: 3rem;
+    position: fixed;
+    bottom:-100%;
+    transition: all 0.25s ease-in;
+    width: 100%;
+    -webkit-box-shadow: 0px -18px 36px -16px rgba(0,0,0,0.52);
+    -moz-box-shadow: 0px -18px 36px -16px rgba(0,0,0,0.52);
+    box-shadow: 0px -18px 36px -16px rgba(0,0,0,0.52);
+    padding: 3rem 0;
 }
 
+.footer.activo {
+    bottom: 0;
+}
 .nav-footer {
     padding: 1rem;
 }
