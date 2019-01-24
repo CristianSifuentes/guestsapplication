@@ -52,6 +52,9 @@ h3{
 img {
     max-width: 100%;
 }
+
+
+
 /* interfaz  */
 .contenedor {
     max-width: 1100px;
@@ -139,6 +142,28 @@ form input[type="submit"] {
 form input[type="submit"]:hover { 
     cursor: pointer;
 }
+
+
+.btn-flotante {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--claro);
+    color: var(--obscuro);
+    padding: .5rem 2rem;
+    text-decoration: none;
+    -webkit-box-shadow: 7px 10px 20px -5px rgba(232,223,232,1);
+    -moz-box-shadow: 7px 10px 20px -5px rgba(232,223,232,1);
+    box-shadow: 7px 10px 20px -5px rgba(232,223,232,1);
+
+}
+
+.btn-flotante.activo, .btn-flotante:hover {
+    background-color: var(--primario);
+    color: var(--claro);
+    transition: all .3s ease-in-out;
+}
+
 
 .boton {
     background-color: var(--claro);
@@ -260,3 +285,79 @@ Sticky Element: Scroll Down to See the Effect
 .destinos .info .titulo{
    font-size: 1.8rem;
 }
+
+.footer{
+    
+}
+
+.nav-footer {
+    padding: 1rem;
+}
+.nav-footer h3{
+  font-size: 1.2rem;
+}
+
+.nav-footer a {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: var(--obscuro);
+}
+
+
+.nav-footer a:last-of-type {
+    margin: 0;
+}
+
+
+
+
+/** Redes Socialaes**/
+
+.sociales ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    /* justify-content: flex-start; */
+     justify-content: flex-end; 
+    /* justify-content: center;
+    justify-content: space-around; */
+    /* justify-content: space-between; */
+    flex:1 0 auto;
+    list-style: none;
+}
+.sociales ul li {
+    margin-right: 1rem;
+}
+.sociales ul li:last-of-type {
+    margin-right: 0;
+}
+.sociales ul li a {
+    text-decoration: none;
+}
+.sociales ul li a:before {
+    font-family: "Font Awesome 5 Brands";
+    color: var(--obscuro);
+    font-size: 1.8rem;
+}
+.sociales ul li a[href*='facebook.com']::before {
+    content: "\f39e";
+}
+
+.sociales ul li a[href*='twitter.com']::before {
+    content: "\f099";
+}
+.sociales ul li a[href*='youtube.com']::before {
+    content: "\f431";
+}
+.sociales ul li a[href*='instagram.com']::before {
+    content: "\f16d";
+}
+.sociales ul li a[href*='pinterest.com']::before {
+    content: "\f231 ";
+}
+.sociales ul li span{
+    display: none;
+}
+
+
